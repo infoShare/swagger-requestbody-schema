@@ -12,7 +12,7 @@ import java.util.Map;
 @NoArgsConstructor
 @AllArgsConstructor
 @Schema(name = "Body", description = "Body", example = "{\"key\":\"value\"}")
-public class Body implements Map<String, Object> {
+public class Body implements Map<String, Object>, MapExclusion {
 
     @Delegate
     @Schema(hidden = true)
